@@ -1,12 +1,6 @@
 import gradio as gr
-
-from app.config.model_config import (
-    AVAILABLE_MODELS
-)
-
-from app.services.code_generator_service import (
-    CodeGeneratorService
-)
+from app.config.model_config import (AVAILABLE_MODELS)
+from app.services.code_generator_service import (CodeGeneratorService)
 
 
 TARGET_LANGUAGES = [

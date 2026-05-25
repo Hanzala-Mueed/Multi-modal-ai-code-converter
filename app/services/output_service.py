@@ -23,10 +23,8 @@ class OutputService:
         model_key: str
     ) -> str:
 
-        # =========================
-        # Create folder path
-        # =========================
 
+        # Create folder path
         language_dir = OUTPUT_DIR / target_language
 
         model_dir = language_dir / model_key
@@ -35,10 +33,7 @@ class OutputService:
             model_dir
         )
 
-        # =========================
-        # Create filename
-        # =========================
-
+        # Create filename with timestamp
         timestamp = FileUtils.generate_timestamp()
 
         extension = OutputService.EXTENSIONS.get(
@@ -50,10 +45,7 @@ class OutputService:
 
         file_path = model_dir / filename
 
-        # =========================
         # Save file
-        # =========================
-
         with open(
             file_path,
             "w",

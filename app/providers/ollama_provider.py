@@ -3,13 +3,11 @@ import requests
 from app.providers.base_provider import BaseProvider
 from app.config.settings import settings
 
-
 class OllamaProvider(BaseProvider):
 
     def __init__(self, model_name: str):
 
         self.model_name = model_name
-
         self.base_url = settings.OLLAMA_BASE_URL
 
     def generate_code(
