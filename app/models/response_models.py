@@ -7,10 +7,12 @@ class GenerationResponse(BaseModel):
 
     model_name: str
 
-    generated_code: str
-
     target_language: str
+
+    generated_code: str = ""
 
     success: bool
 
     error: str | None = None
+
+    generation_time: float | None = None
