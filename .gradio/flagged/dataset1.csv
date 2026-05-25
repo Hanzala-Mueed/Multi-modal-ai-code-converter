@@ -1,0 +1,25 @@
+Python Source Code,Target Language,Select Models,Generated Output,timestamp
+"def add(a, b):
+",rust,"[""gemini_flash""]","'
+
+
+MODEL: gemini-2.5-flash
+
+PROVIDER: gemini
+
+GENERATION TIME: 3.38 sec
+
+SAVED FILE:
+D:\2_Brainstorm\udemy_projects\Multi-modal-ai-code-converter\app\outputs\rust\gemini_flash\2026_05_25_07_57_49.rs
+
+GENERATED CODE:
+
+fn add(a: i32, b: i32) -> i32 {
+    a + b
+}
+
+fn main() {
+    // Call the add function with 5 and 3, then print the result.
+    println!(""{}"", add(5, 3));
+}
+",2026-05-25 07:59:45.028245

@@ -1,2 +1,8 @@
+from app.ui.gradio_ui import create_ui
+
+
 def start_application():
-    print("Code Generator Started...")
+
+    app = create_ui()
+
+    app.launch()
