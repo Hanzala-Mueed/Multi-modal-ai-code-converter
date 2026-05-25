@@ -14,6 +14,10 @@ from app.services.prompt_service import (
     PromptService
 )
 
+from app.services.output_service import (
+    OutputService
+)
+
 
 class CodeGeneratorService:
 
@@ -80,9 +84,13 @@ class CodeGeneratorService:
                 2
             )
 
-            # =========================
-            # Return response
-            # =========================
+            saved_file_path = (
+                OutputService.save_generated_code(
+                    generated_code=generated_code,
+                    target_language=target_language,
+                    model_key=model_key
+                )
+            )
 
             return GenerationResponse(
                 provider=provider_name,
@@ -90,8 +98,11 @@ class CodeGeneratorService:
                 target_language=target_language,
                 generated_code=generated_code,
                 success=True,
-                generation_time=generation_time
+                generation_time=generation_time,
+                saved_file_path=saved_file_path
             )
+        
+
 
         except Exception as error:
 
@@ -102,3 +113,4 @@ class CodeGeneratorService:
                 success=False,
                 error=str(error)
             )
+        

@@ -16,3 +16,5 @@ class GenerationResponse(BaseModel):
     error: str | None = None
 
     generation_time: float | None = None
+
+    saved_file_path: str | None = None
