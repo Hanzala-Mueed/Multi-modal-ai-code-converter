@@ -99,12 +99,18 @@ multi-modal-ai-code-converter/
 
 ---
 
+# Gradio UI Interface
+
+<img width="1338" height="606" alt="Screenshot 2026-05-25 080820" src="https://github.com/user-attachments/assets/33bb6684-99c7-4acb-b742-bdfab1402973" />
+
+---
+
 # Setup Instructions
 
 ## 1. Clone Repository
 
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/Hanzala-Mueed/Multi-modal-ai-code-converter.git
 cd Multi-modal-ai-code-converter
 ```
 
@@ -295,7 +301,3 @@ Planned future improvements:
 - Loguru
 
 ---
-
-# License
-
-This project is for educational and research purposes.
