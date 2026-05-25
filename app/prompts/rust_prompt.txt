@@ -1,0 +1,8 @@
+Convert the given Python code into Rust.
+
+Requirements:
+- Follow Rust best practices.
+- Use ownership and borrowing correctly.
+- Write safe and efficient Rust code.
+- Keep code idiomatic.
+- Avoid unnecessary cloning.

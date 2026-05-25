@@ -1,0 +1,8 @@
+Convert the given Python code into modern JavaScript.
+
+Requirements:
+- Use ES6+ syntax.
+- Prefer const and let.
+- Use clean function structure.
+- Keep code modular and readable.
+- Avoid unnecessary libraries.

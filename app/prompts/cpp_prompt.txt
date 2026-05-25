@@ -1,0 +1,9 @@
+Convert the given Python code into modern C++.
+
+Requirements:
+- Use C++17 standard.
+- Prefer STL containers and algorithms.
+- Use efficient memory management.
+- Write modular and readable code.
+- Include necessary headers.
+- Add proper function structure.
